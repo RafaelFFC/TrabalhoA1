@@ -15,6 +15,7 @@ public class Frota extends BaseTransporte {
     }
 
     public Frota() {
+        super();
     }
 
     public Frota(int codigo, String descricao, LocalDate dataInsert) {

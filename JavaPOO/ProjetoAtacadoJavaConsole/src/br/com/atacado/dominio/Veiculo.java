@@ -7,7 +7,7 @@ public class Veiculo extends Frota {
    private String placa;
 
    public Veiculo() {
-
+      super();
    }
 
    public Veiculo(int codigo, String descricao, LocalDate dataInsert, int codigoFrota) {
