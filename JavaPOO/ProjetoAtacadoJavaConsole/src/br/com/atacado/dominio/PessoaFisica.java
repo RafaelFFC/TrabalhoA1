@@ -15,50 +15,69 @@ public class PessoaFisica extends BasePessoa {
     public String getCpf() {
         return cpf;
     }
+
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
+
     public String getRg() {
         return rg;
     }
+
     public void setRg(String rg) {
         this.rg = rg;
     }
+
     public String getSexo() {
         return sexo;
     }
+
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
+
     public String getRaca() {
         return raca;
     }
+
     public void setRaca(String raca) {
         this.raca = raca;
     }
+
     public String getNacionalidade() {
         return nacionalidade;
     }
+
     public void setNacionalidade(String nacionalidade) {
         this.nacionalidade = nacionalidade;
     }
+
     public String getNaturalidade() {
         return naturalidade;
     }
+
     public void setNaturalidade(String naturalidade) {
         this.naturalidade = naturalidade;
     }
+
     public String getNomePai() {
         return nomePai;
     }
+
     public void setNomePai(String nomePai) {
         this.nomePai = nomePai;
     }
+
     public String getNomeMae() {
         return nomeMae;
     }
+
     public void setNomeMae(String nomeMae) {
         this.nomeMae = nomeMae;
+    }
+
+    public PessoaFisica() {
+
     }
 
     public PessoaFisica(int codigoPessoa, String nome, String email, String site, LocalDate dataInclusao, String cpf,
@@ -75,7 +94,7 @@ public class PessoaFisica extends BasePessoa {
         this.nomeMae = nomeMae;
     }
 
-        @Override
+    @Override
     public void Imprimir() {
         System.out.println("Código da Pessoa: " + this.codigoPessoa);
         System.out.println("Nome: " + this.nome);

@@ -1,11 +1,21 @@
 package br.com.atacado.dominio;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public abstract class BaseTransporte {
     protected int codigo;
     protected String descricao;
     protected LocalDate dataInsert;
+    private List<Frota> frota;
+
+    public List<Frota> getFrota() {
+        return frota;
+    }
+
+    public void setFrota(List<Frota> frota) {
+        this.frota = frota;
+    }
 
     public int getCodigo() {
         return codigo;
@@ -30,7 +40,7 @@ public abstract class BaseTransporte {
     public void setDataInsert(LocalDate dataInsert) {
         this.dataInsert = dataInsert;
     }
-    
+
     public BaseTransporte() {
     }
 
