@@ -7,7 +7,6 @@ public abstract class BaseTransporte {
     protected int codigo;
     protected String descricao;
     protected LocalDate dataInsert;
-    private List<Frota> frota;
 
     public List<Frota> getFrota() {
         return frota;
