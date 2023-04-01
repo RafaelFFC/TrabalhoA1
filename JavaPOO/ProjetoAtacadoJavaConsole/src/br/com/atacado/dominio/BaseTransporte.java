@@ -30,6 +30,9 @@ public abstract class BaseTransporte {
     public void setDataInsert(LocalDate dataInsert) {
         this.dataInsert = dataInsert;
     }
+    
+    public BaseTransporte() {
+    }
 
     public BaseTransporte(int codigo, String descricao, LocalDate dataInsert) {
         this.codigo = codigo;
